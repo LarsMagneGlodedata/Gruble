@@ -49,6 +49,7 @@ h1 {
     background-color: var(--secondary-color);
     field-sizing: content;
     padding-bottom: 2em;
+    hyphens: auto;
 }
 
 

@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const input = document.createElement('textarea')
         input.rows = '1'
         input.classList.add('input')
-        input.style.textTransform = 'capitalize'
 
         const poeng = document.createElement('input')
         poeng.type = 'text'
