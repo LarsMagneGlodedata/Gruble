@@ -1,16 +1,16 @@
 :root {
   --primary-color: #73C2BE;
-  --secondary-color: #73EEDC;
-  --background-color: white;
-  --font-color: #73C2BE;
+  --secondary-color: #A2BCE0;
+  --background-color: ;
+  --font-color: #BEB8EB;
   --heading-font: ;
   --spacing: ;
-  --default-padding: 1em;
+  --default-padding: 0.5em;
   --default-margin: 1em;
   --default-border-radius: 15px;
   --default-box-shadow: 0 0 5px 1px var(--secondary-color);
-  --p-size: 26px;
-  --p-size-mobile: 20px;
+  --p-size: 16px;
+  --p-size-mobile: 10px;
   --h1-size: 40px;
   --h1-size-mobile: 30px;
   --h2-size: 24px;
