@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const innerContainer = document.createElement('div')
         innerContainer.classList.add('innerContainer')
 
-        const input = document.createElement('input')
-        input.type = 'text'
+        const input = document.createElement('textarea')
+        input.rows = '1'
         input.classList.add('input')
         input.style.textTransform = 'capitalize'
 
