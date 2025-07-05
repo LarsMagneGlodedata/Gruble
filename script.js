@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       randomButton.addEventListener('click', () => {
         const bokstavRute = document.querySelectorAll('.bokstaver')
-        const fullAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ".split('');
+        const fullAlphabet = "ABDEFGHIJKLMNOPRSTUVYØÅ".split('');
         const shuffledAlphabet = shuffleArray([...fullAlphabet]);
 
         bokstavRute.forEach((item, index) => {
