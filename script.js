@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('container')
     const sum = document.getElementById('sum')
     const clearAll = document.getElementById('clear')
+    const randomButton = document.getElementById('randomLetter')
+
     for (let i = 0; i < 6*6; i++) {
         const innerContainer = document.createElement('div')
         innerContainer.classList.add('innerContainer')
@@ -23,9 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
             poeng.remove()
             input.style.width = '50px'
             input.style.textAlign = 'center'
+            input.classList.add('bokstaver')
         }
 
-        if (i < 7) {
+        if (i < 6) {
             poeng.remove()
             input.style.fontWeight = 'bold'
         }
@@ -72,5 +75,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
+
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+
+      randomButton.addEventListener('click', () => {
+        const bokstavRute = document.querySelectorAll('.bokstaver')
+        const fullAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ".split('');
+        const shuffledAlphabet = shuffleArray([...fullAlphabet]);
+
+        bokstavRute.forEach((item, index) => {
+            item.value = shuffledAlphabet[index]
+        })
+    })
 
 })
