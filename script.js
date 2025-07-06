@@ -94,4 +94,84 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
 
+    const bgc = document.getElementById('bgc')
+    const body = document.querySelector('body')
+    const h1 = document.getElementById('h1')
+    const txtField = document.querySelectorAll('.input')
+
+    bgc.addEventListener('change', (event) => {
+        txtField.forEach(item => {
+            item.style.backgroundColor = ''
+        })
+        body.style.backgroundImage = ''
+        h1.style.color = ''
+        sum.style.color = ''
+        body.style.backgroundRepeat = ''
+        body.style.backgroundSize = ''
+        body.style.backgroundPositionX = ''
+
+        if (event.target.value == 0) {
+            // 
+        } else if (event.target.value == 1) {
+            body.style.backgroundImage = `url("https://images.unsplash.com/photo-1472289065668-ce650ac443d2?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`
+            h1.style.color = 'black'
+            sum.style.color = 'white'
+            body.style.backgroundRepeat = 'no-repeat'
+            body.style.backgroundSize = 'auto'
+
+        } else if (event.target.value == 2) {
+            body.style.backgroundImage = 'url("https://media1.tenor.com/m/kq7GyBPPIj0AAAAd/sweaty-speedrunner.gif")'
+            h1.style.color = ''
+            sum.style.color = ''
+            body.style.backgroundRepeat = 'no-repeat'
+            body.style.backgroundSize = '1500px'
+            body.style.backgroundPositionX = '-400px'
+            txtField.forEach(item => {
+                item.style.backgroundColor = 'rgba(255, 255, 255, 0.5)'
+            })
+
+        } else if (event.target.value == 3) {
+            body.style.backgroundImage = 'url("https://media1.tenor.com/m/fCqfvusQwzQAAAAC/sunrise.gif")'
+            h1.style.color = 'white'
+            sum.style.color = 'white'
+            body.style.backgroundRepeat = 'repeat'
+            body.style.backgroundSize = 'cover'
+
+
+        } else if (event.target.value == 4) {
+            body.style.backgroundImage = 'url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-background-goo.jpg")'
+            h1.style.color = 'darkviolet'
+            sum.style.color = 'darkviolet'
+            body.style.backgroundRepeat = 'no-repeat'
+            body.style.backgroundSize = 'auto'
+            body.style.backgroundPositionX = ''
+
+
+        } else if (event.target.value == 5) {
+            body.style.backgroundImage = `url("tlotr.gif")`
+            h1.style.color = ''
+            sum.style.color = ''
+            
+
+        } else if (event.target.value == 6) {
+            body.style.backgroundImage = ''
+            h1.style.color = ''
+            sum.style.color = ''
+
+        } else if (event.target.value == 7) {
+            body.style.backgroundImage = ''
+            h1.style.color = ''
+            sum.style.color = ''
+
+        } else if (event.target.value == 8) {
+            body.style.backgroundImage = ''
+            h1.style.color = ''
+            sum.style.color = ''
+
+        } else if (event.target.value == 9) {
+            body.style.backgroundImage = ''
+            h1.style.color = ''
+            sum.style.color = ''
+        }
+    })
 })
