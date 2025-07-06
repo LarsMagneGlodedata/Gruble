@@ -124,8 +124,8 @@ document.addEventListener('DOMContentLoaded', () => {
             h1.style.color = ''
             sum.style.color = ''
             body.style.backgroundRepeat = 'no-repeat'
-            body.style.backgroundSize = '1500px'
-            body.style.backgroundPositionX = '-400px'
+            body.style.backgroundSize = 'cover'
+            body.style.backgroundPositionX = 'center'
             txtField.forEach(item => {
                 item.style.backgroundColor = 'rgba(255, 255, 255, 0.5)'
             })
@@ -148,10 +148,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         } else if (event.target.value == 5) {
-            body.style.backgroundImage = `url("tLotR-trilogy")`
-            h1.style.color = ''
-            sum.style.color = ''
-            
+            body.style.backgroundImage = `url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzN4bmtibnZkeDAybW9wa3J4ZW92eDN0NGx0dmMzYWdoN2J1OW80YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dkUtjuBEdICST5zG7p/giphy.gif")`
+            h1.style.color = 'black'
+            sum.style.color = 'black'
+            body.style.backgroundRepeat = 'no-repeat'
+            body.style.backgroundSize = 'cover'
+            body.style.backgroundPositionX = 'center'
+            txtField.forEach(item => {
+                item.style.backgroundColor = 'rgba(255, 255, 255, 0.5)'
+            })
 
         } else if (event.target.value == 6) {
             body.style.backgroundImage = ''
