@@ -121,8 +121,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         } else if (event.target.value == 2) {
             body.style.backgroundImage = 'url("https://media1.tenor.com/m/kq7GyBPPIj0AAAAd/sweaty-speedrunner.gif")'
-            h1.style.color = ''
-            sum.style.color = ''
+            h1.style.color = 'bisque'
+            sum.style.color = 'black'
             body.style.backgroundRepeat = 'no-repeat'
             body.style.backgroundSize = 'cover'
             body.style.backgroundPositionX = 'center'
