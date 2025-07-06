@@ -159,9 +159,12 @@ document.addEventListener('DOMContentLoaded', () => {
             })
 
         } else if (event.target.value == 6) {
-            body.style.backgroundImage = ''
-            h1.style.color = ''
-            sum.style.color = ''
+            body.style.backgroundImage = `url("https://images.unsplash.com/photo-1498590880827-3f79fdcd7fbe?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`
+            h1.style.color = 'white'
+            sum.style.color = 'white'
+            body.style.backgroundSize = 'cover'
+            body.style.backgroundRepeat = 'no-repeat'
+
 
         } else if (event.target.value == 7) {
             body.style.backgroundImage = ''

@@ -1,5 +1,6 @@
 body {
     background-image: linear-gradient(to right, black -60%, blue, black 120%);
+    transition: 1s;
 }
 
 #bgc {
