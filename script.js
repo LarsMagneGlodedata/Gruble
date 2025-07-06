@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         } else if (event.target.value == 5) {
-            body.style.backgroundImage = `url("tlotr.gif")`
+            body.style.backgroundImage = `url("tLotR-trilogy")`
             h1.style.color = ''
             sum.style.color = ''
             
