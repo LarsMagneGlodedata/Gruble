@@ -167,19 +167,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         } else if (event.target.value == 7) {
-            body.style.backgroundImage = ''
-            h1.style.color = ''
-            sum.style.color = ''
+            body.style.backgroundImage = `url("https://plus.unsplash.com/premium_photo-1684952851101-6ab3e41b0448?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`
+            h1.style.color = 'black'
+            sum.style.color = 'black'
+            body.style.backgroundSize = 'cover'
+            body.style.backgroundRepeat = 'no-repeat'
 
         } else if (event.target.value == 8) {
-            body.style.backgroundImage = ''
-            h1.style.color = ''
-            sum.style.color = ''
+            body.style.backgroundImage = `url("https://media1.tenor.com/m/x8v1oNUOmg4AAAAd/rickroll-roll.gif")`
+            h1.style.color = 'black'
+            sum.style.color = 'white'
+            body.style.backgroundSize = 'cover'
+            body.style.backgroundRepeat = 'no-repeat'
+            body.style.backgroundPositionX = 'center'
+            txtField.forEach(item => {
+                item.style.backgroundColor = 'rgba(255, 255, 255, 0.5)'
+            })
 
         } else if (event.target.value == 9) {
-            body.style.backgroundImage = ''
-            h1.style.color = ''
-            sum.style.color = ''
+            body.style.backgroundImage = `url("https://www.campervannorway.com/assets/img/blog/588.png")`
+            h1.style.color = 'black'
+            sum.style.color = 'bisque'
+            body.style.backgroundSize = 'cover'
+            body.style.backgroundRepeat = 'no-repeat'
+            body.style.backgroundPositionX = 'center'
         }
     })
 })
