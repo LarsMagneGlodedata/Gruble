@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const clearAll = document.getElementById('clear')
     const randomButton = document.getElementById('randomLetter')
 
+    // 
+    // Gruble grid
+
     for (let i = 0; i < 6*6; i++) {
         const innerContainer = document.createElement('div')
         innerContainer.classList.add('innerContainer')
@@ -38,6 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // 
+    // Total sum function
+
     function totalSum() {
         let currentTotal = 0
         const poengInputs = document.querySelectorAll('.poeng')
@@ -60,6 +66,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
+    // 
+    // Clear board button
+
     const poengFields = document.querySelectorAll('.poeng')
     const inputFields = document.querySelectorAll('.input')
     clearAll.addEventListener('click', () => {
@@ -75,6 +84,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
+    // 
+    // Letter generator
 
     function shuffleArray(array) {
         for (let i = array.length - 1; i > 0; i--) {
@@ -93,6 +104,9 @@ document.addEventListener('DOMContentLoaded', () => {
             item.value = shuffledAlphabet[index]
         })
     })
+    
+    // 
+    // Background themes
 
     const bgc = document.getElementById('bgc')
     const body = document.querySelector('body')
