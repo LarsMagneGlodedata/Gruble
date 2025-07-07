@@ -205,6 +205,17 @@ document.addEventListener('DOMContentLoaded', () => {
             body.style.backgroundSize = 'cover'
             body.style.backgroundRepeat = 'no-repeat'
             body.style.backgroundPositionX = 'center'
+
+        } else if (event.target.value == 10) {
+            body.style.backgroundImage = `url("https://media1.tenor.com/m/wP4LSSdF2cMAAAAC/aaaa-hola.gif")`
+            h1.style.color = 'black'
+            sum.style.color = 'bisque'
+            body.style.backgroundSize = 'cover'
+            body.style.backgroundRepeat = 'no-repeat'
+            body.style.backgroundPositionX = 'center'
+            txtField.forEach(item => {
+                item.style.backgroundColor = 'rgba(255, 255, 255, 0.5)'
+            })
         }
     })
 })
