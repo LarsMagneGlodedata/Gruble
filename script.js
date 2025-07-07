@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const poengFields = document.querySelectorAll('.poeng')
     const inputFields = document.querySelectorAll('.input')
     clearAll.addEventListener('click', () => {
-        const userConfirm = confirm('Are you sure you want to clear all fields?')
+        const userConfirm = confirm('Are you sure you want to clear everything?')
         if (userConfirm) {
             inputFields.forEach(item => {
                 item.value = ''
