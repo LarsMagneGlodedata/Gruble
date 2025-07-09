@@ -69,6 +69,12 @@ h1 {
     color: var(--font-color);
 }
 
+@media screen and (max-width: 900px) {
+    .input {
+        width: 130px;
+    }
+}
+
 @media screen and (max-width: 699px) {
     .poeng {
         font-size: var(--p-size-mobile);
@@ -82,3 +88,14 @@ h1 {
     }
 }
 
+@media screen and (max-width: 420px) {
+    .input {
+        width: 65px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .input {
+        width: 55px;
+    }
+}
